@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <style> body{font-family: 'Work Sans';} </style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sutokami Shop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="dragDropStyle.css">
+    </head>
+    
+    <body>
+        <!--The navbar-->
+        <header>
+            <a href="index.html"><div class="signature">ノウ</div></a>
+            <nav>
+            <ul class="options">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wip.html">Portfolio</a></li>
+                    <li><a href="aboutMe.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                <a class="icon-link" href="#"><i class="social-icon fab fa-twitter"></i></a>
+                <a class="icon-link" href="#"><i class="social-icon fab fa-discord"></i></a>
+                <a class="icon-link" href="#"><i class="social-icon fab fa-instagram"></i></a>
+                <div class="icon-separator"></div>
+                <a class="profile-icon" href="login.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </header>
+        
+        <span class="welcome"><h1>welcome to my humble shop</h1></span>
+        <div class="banner"><img src="trio.png"></div>
+
+        <!--Best Sellers are here-->
+        <div class="flex-container">
+            <div class="product-grid">
+                <div class="bestSeller"><img src="Venti.png" alt="Venti Sticker"></div>
+                <div class="bestSeller-details">
+                    <h1 class="bestSeller-name">Genshin Impact's Venti Sticker</h1>
+    
+                    <!-- Star rating and quantity selector in a flex container -->
+                    <div class="rating-quantity">
+                        <div class="star-rating">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9734;</span>
+                        </div>
+    
+                        <!-- Quantity selector -->
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value-static">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+    
+                    <span id="productPrice-text-static"><h2>₱100</h2></span>
+                    <span class="addToCart">ADD TO CART</span>
+    
+                    <hr class="product-separator">
+                    <h4>Product Description:</h4>
+                    <p class="product-description">It's a Venti sticker I made back in 2020! It initially was supposed to be a study, but it became more ambitious than that so I went along and made my first Genshin Impact Sticker set!</p>
+                    <span id="misc-product-desc">
+                        <ul><li>2 x 2" high-quality vinyl sticker</li></ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="product-grid">
+                <div class="bestSeller"><img src="xiao.png" alt="Xiao Sticker"></div>
+                <div class="bestSeller-details">
+                    <h1 class="bestSeller-name">Genshin Impact's Xiao Sticker</h1>
+    
+                    <!-- Star rating and quantity selector in a flex container -->
+                    <div class="rating-quantity">
+                        <div class="star-rating">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9734;</span>
+                        </div>
+    
+                        <!-- Quantity selector -->
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value-static">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+    
+                    <span id="productPrice-text-static"><h2>₱100</h2></span>
+                    <span class="addToCart">ADD TO CART</span>
+    
+                    <hr class="product-separator">
+                    <h4>Product Description:</h4>
+                    <p class="product-description">It's the last sticker I made supposedly for Genshin Impact character study, but the entire study became too ambitious and instead I turned it into a sticker collection set! I made this one with the most amount of hours so I hope you guys like it!</p>
+                    <span id="misc-product-desc">
+                        <ul><li>2 x 2" high-quality vinyl sticker</li></ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="product-grid">
+                <div class="bestSeller" style="width: 85%;"><img src="knight.png" alt="Black Knight Sticker"></div>
+                <div class="bestSeller-details">
+                    <h1 class="bestSeller-name">The Black Knights Sticker</h1>
+    
+                    <!-- Star rating and quantity selector in a flex container -->
+                    <div class="rating-quantity">
+                        <div class="star-rating">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9734;</span>
+                        </div>
+    
+                        <!-- Quantity selector -->
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value-static">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+    
+                    <span id="productPrice-text-static"><h2>₱100</h2></span>
+                    <span class="addToCart">ADD TO CART</span>
+    
+                    <hr class="product-separator">
+                    <h4>Product Description:</h4>
+                    <p class="product-description">From the warrior stickers series I made! This one represents the knights.</p>
+                    <span id="misc-product-desc">
+                        <ul><li>2.3" x 1.75" high-quality vinyl sticker</li></ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <span class="moreStuff"><h1>More Stuff Here!</h1></span>
+        <div class="rnbBar"><img src="Rainbow bar.png" alt=""></div>
+
+        <!--The Drag and Drop Section-->
+        <main class="page-layout">
+            <div id="content" class="add-to-cart-section">
+                <div class="product-card" draggable="true" id="product-venti">
+                    <div class="product-image"><img src="Venti.png" alt="Venti Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">Genshin Impact's Venti Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-zhongli">
+                    <div class="product-image"><img src="Zhongli.png" alt="Zhongli Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">Genshin Impact's Zhongli Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-xiao">
+                    <div class="product-image"><img src="xiao.png" alt="Xiao Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">Genshin Impact's Xiao Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-bear">
+                    <div class="product-image"><img src="bear.png" alt="Bear Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">Cute Bear Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-kirby">
+                    <div class="product-image"><img src="Kirby.png" alt="Kirby Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">Pixel Kirby Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-bongoCat">
+                    <div class="product-image"><img src="Bongo cat.png" alt="Bongo Cat Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">Pixel Bongo Cat Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-knight">
+                    <div class="product-image"><img src="knight.png" alt="Black Knight Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">The Black Knights Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-viking">
+                    <div class="product-image"><img src="Viking.png" alt="Grey Viking Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">The Grey Vikings Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-Deity">
+                    <div class="product-image"><img src="Deity.png" alt="Golden Deity Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">The Golden Deities Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-Samurai">
+                    <div class="product-image"><img src="Samurai.png" alt="Red Samurai Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">The Red Samurai Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-Pirate">
+                    <div class="product-image"><img src="Pirate.png" alt="Blue Pirate Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">The Blue Pirates Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+
+                <div class="product-card" draggable="true" id="product-Spartan">
+                    <div class="product-image"><img src="Spartan.png" alt="Green Spartan Sticker"></div>
+                    <div class="product-details">
+                        <h1 class="product-name">The Green Spartans Sticker</h1>
+                        <div class="quantity-selector">
+                            <button class="decrease">-</button>
+                            <span class="quantity-text" id="quantity-value">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <span id="productPrice-text"><h2>₱100</h2></span>
+                        <span class="addToCart">ADD TO CART</span>
+                    </div>
+                </div>
+            </div>
+            <div id="drop-area"><h2>Your Cart</h2></div>
+        </main>
+        <footer>Gale 2004-2025</footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const products = document.getElementsByClassName("product-card");
+                const addToCartButtons = document.querySelectorAll(".product-card .addToCart");
+                const bestSellerButtons = document.querySelectorAll(".product-grid .addToCart");
+                const dropArea = document.getElementById("drop-area");
+                const contentArea = document.getElementById("content");
+            
+                let selected = null;
+            
+                // Helper: Update price
+                function updatePrice(product) {
+                    const priceElement = product.querySelector("#productPrice-text h2");
+                    const quantityValue = parseInt(product.querySelector(".quantity-text").textContent);
+                    const totalPrice = 100 * quantityValue;
+                    priceElement.textContent = `₱${totalPrice}`;
+                }
+            
+                // Drag events
+                for (let product of products) {
+                    product.addEventListener("dragstart", function () {
+                        selected = this;
+                    });
+                }
+            
+                dropArea.addEventListener("dragover", function (e) {
+                    e.preventDefault();
+                });
+            
+                dropArea.addEventListener("drop", function () {
+                    if (selected) {
+                        dropArea.appendChild(selected);
+                        const button = selected.querySelector(".addToCart");
+                        button.textContent = "Remove from Cart";
+                        button.classList.add("removeFromCart");
+                        selected = null;
+                    }
+                });
+            
+                contentArea.addEventListener("dragover", function (e) {
+                    e.preventDefault();
+                });
+            
+                contentArea.addEventListener("drop", function () {
+                    if (selected) {
+                        contentArea.appendChild(selected);
+                        const button = selected.querySelector(".addToCart");
+                        button.textContent = "ADD TO CART";
+                        button.classList.remove("removeFromCart");
+                        selected = null;
+                    }
+                });
+            
+                // Add/Remove Cart buttons in Product Cards
+                addToCartButtons.forEach(button => {
+                    button.addEventListener("click", function () {
+                        const product = button.closest(".product-card");
+                        if (button.textContent === "ADD TO CART") {
+                            dropArea.appendChild(product);
+                            button.textContent = "Remove from Cart";
+                            button.classList.add("removeFromCart");
+                            updatePrice(product);
+                        } else {
+                            contentArea.appendChild(product);
+                            button.textContent = "ADD TO CART";
+                            button.classList.remove("removeFromCart");
+                            updatePrice(product);
+                        }
+                    });
+                });
+            
+                // Quantity Increase / Decrease for all product cards
+                document.addEventListener("click", function (e) {
+                    if (e.target.classList.contains("increase") || e.target.classList.contains("decrease")) {
+                        const isBestSeller = e.target.closest(".product-grid");
+                        const isProductCard = e.target.closest(".product-card");
+
+                        let targetName = "";
+                        let quantity = 0;
+
+                        // Handle Best Seller Quantity Change
+                        if (isBestSeller) {
+                            targetName = isBestSeller.querySelector(".bestSeller-name").textContent.trim();
+
+                            const matchingCard = [...document.querySelectorAll(".product-card")].find(card =>
+                                card.querySelector(".product-name").textContent.trim() === targetName
+                            );
+
+                            if (matchingCard) {
+                                const quantityText = matchingCard.querySelector(".quantity-text");
+                                quantity = parseInt(quantityText.textContent);
+
+                                if (e.target.classList.contains("increase")) {
+                                    quantity++;
+                                } else if (e.target.classList.contains("decrease") && quantity > 1) {
+                                    quantity--;
+                                }
+
+                                // Update real product-card
+                                quantityText.textContent = quantity;
+                                updatePrice(matchingCard);
+
+                                // 🔁 Update Best Seller visual too
+                                const bestSellerQtyDisplay = isBestSeller.querySelector(".quantity-text");
+                                if (bestSellerQtyDisplay) {
+                                    bestSellerQtyDisplay.textContent = quantity;
+                                }
+
+                                const bestSellerPrice = isBestSeller.querySelector("#productPrice-text h2");
+                                if (bestSellerPrice) {
+                                    bestSellerPrice.textContent = `₱${100 * quantity}`;
+                                }
+                            }
+                        }
+
+                        // Handle regular Product Card Quantity Change
+                        else if (isProductCard) {
+                            const product = isProductCard;
+                            const quantityText = product.querySelector(".quantity-text");
+                            quantity = parseInt(quantityText.textContent);
+
+                            if (e.target.classList.contains("increase")) {
+                                quantity++;
+                            } else if (e.target.classList.contains("decrease") && quantity > 1) {
+                                quantity--;
+                            }
+
+                         quantityText.textContent = quantity;
+                            updatePrice(product);
+
+                            // 🧠 Optional: Update Best Seller preview too
+                            targetName = product.querySelector(".product-name").textContent.trim();
+                            const matchingBestSeller = [...document.querySelectorAll(".product-grid")].find(grid =>
+                                grid.querySelector(".bestSeller-name")?.textContent.trim() === targetName
+                            );
+
+                            if (matchingBestSeller) {
+                                const bestSellerQtyDisplay = matchingBestSeller.querySelector(".quantity-text");
+                                if (bestSellerQtyDisplay) {
+                                    bestSellerQtyDisplay.textContent = quantity;
+                                }
+
+                                const bestSellerPrice = matchingBestSeller.querySelector("#productPrice-text h2");
+                                if (bestSellerPrice) {
+                                    bestSellerPrice.textContent = `₱${100 * quantity}`;
+                                }
+                            }
+                        }
+                    }
+                });
+
+                // 🆕 Add-to-Cart for Best Sellers
+                bestSellerButtons.forEach(bestSellerButton => {
+                    bestSellerButton.addEventListener("click", function () {
+                        const bestSellerName = this.closest(".product-grid").querySelector(".bestSeller-name").textContent.trim();
+            
+                        // Match with product in the content area
+                        const productCards = document.querySelectorAll("#content .product-card");
+                        let matchingCard = null;
+            
+                        productCards.forEach(card => {
+                            const cardName = card.querySelector(".product-name").textContent.trim();
+                            if (cardName === bestSellerName) {
+                                matchingCard = card;
+                            }
+                        });
+            
+                        // Move to cart if not already there
+                        if (matchingCard && !dropArea.contains(matchingCard)) {
+                            dropArea.appendChild(matchingCard);
+                            const cardButton = matchingCard.querySelector(".addToCart");
+                            cardButton.textContent = "Remove from Cart";
+                            cardButton.classList.add("removeFromCart");
+                            updatePrice(matchingCard);
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

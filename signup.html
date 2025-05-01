@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <!--The imports and whatnot-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Sign Up</Title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="signupStyle.css">
+    </head>
+
+    <body>
+        <!--The navbar-->
+        <header>
+            <a href="index.html"><div class="signature">ノウ</div></a>
+            <nav>
+            <ul class="options">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wip.html">Portfolio</a></li>
+                    <li><a href="aboutMe.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                <a class="icon-link" href="#"><i class="social-icon fab fa-twitter"></i></a>
+                <a class="icon-link" href="#"><i class="social-icon fab fa-discord"></i></a>
+                <a class="icon-link" href="#"><i class="social-icon fab fa-instagram"></i></a>
+                <div class="icon-separator"></div>
+                <a class="profile-icon" href="login.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </header>
+
+        <main class="signUp-container" id="signUp-container">
+            <div class="signUp-layout">
+                <div class="signUp-form">
+                    <img src="logo.png">
+                    <h1>Sign Up</h1>
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="text" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+
+                
+                    <div class="social-login">
+                        <a href="#" class="google icon-box"><img src="googleIcon.svg" alt="Google logo" class="google-logo"></a>
+                        <a href="#" class="facebook icon-box"><i class="signUp-icon fab fa-facebook-f"></i></a>
+                        <a href="#" class="twitter icon-box"><i class="signUp-icon fab fa-twitter"></i></a>
+                    </div>  
+                
+                    <button id="signup-btn"><img src="chevronRightArrow.svg" alt="right arrow" width="42" height="42"></button>
+                    <a href="#">having trouble signing up?</a>
+                    <a href="login.html">Already have an account? Log in</a>
+                </div>
+
+                <div class="signUp-image"></div>
+            </div>                       
+        </main>
+
+        <footer>Gale 2004-2025</footer>
+    </body>
+</html>
+
+<script>
+    document.getElementById("signup-btn").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get values
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirm-password").value;
+
+        // Check if any field is empty
+        if (!username || !email || !password || !confirmPassword) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        // Check if passwords match
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return;
+        }
+
+        // Save to localStorage
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userPassword", password);
+
+        // Debugging logs to check what's saved
+        console.log("Saved Email:", email);  // Log the email being saved
+        console.log("Saved Password:", password);  // Log the password being saved
+
+        // Redirect to login page
+        window.location.href = "login.html";
+    });
+</script>

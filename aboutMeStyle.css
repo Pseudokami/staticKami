@@ -1,0 +1,88 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures the entire website behaves like a box-container */
+}
+
+header {
+    position: relative; /* Makes sure .signature is positioned inside */
+    height: 60px;
+    background-color: #000;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body {
+    background-color: #ECE9DC;
+    overflow-x: hidden;
+    position: relative;
+}
+
+footer {
+    background-color: #272823; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 28px 20px; /* Adjust padding for better spacing */
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.signature {
+    text-decoration: none;
+    color: white;
+    position: absolute; /* Keeps it inside the navbar */
+    top: 50%;
+    left: 16px;
+    font-size: 1.32rem;
+    font-weight: 900;
+    writing-mode: vertical-rl; /* Makes text vertical */
+    text-orientation: upright; /* Ensures characters stay upright */
+    transform: translateY(-50%); /* Centers it vertically */
+    white-space: nowrap; /* Prevents unwanted line breaks */
+}
+
+.options {
+    display: flex;
+    list-style: none;
+}
+
+.options li {
+    margin-left: 20px;
+}
+
+.options li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.social-icon {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.15rem;
+}
+
+.icon-separator {
+    width: 2px;
+    height: 20px;
+    background-color: #aaa;
+    margin: 0 14px;
+}
+
+.profile-icon {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <!--The imports and whatnot-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Log in</Title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="loginStyle.css">
+    </head>
+
+    <body>
+        <!--The navbar-->
+        <header>
+            <a href="index.html"><div class="signature">ノウ</div></a>
+            <nav>
+            <ul class="options">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wip.html">Portfolio</a></li>
+                    <li><a href="aboutMe.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                <a class="icon-link" href="#"><i class="social-icon fab fa-twitter"></i></a>
+                <a class="icon-link" href="#"><i class="social-icon fab fa-discord"></i></a>
+                <a class="icon-link" href="#"><i class="social-icon fab fa-instagram"></i></a>
+                <div class="icon-separator"></div>
+                <a class="profile-icon" href="login.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </header>
+
+        <main class="login-container" id="login-container">
+            <div class="login-layout">
+                <div class="login-image"></div>
+                
+                <div class="login-form">
+                    <img src="logo.png">
+                    <h1>Sign In</h1>
+                    <input type="text" id="login-email" placeholder="Email">
+                    <input type="password" id="login-password" placeholder="Password">
+
+                    <div class="social-login">
+                        <a href="#" class="google icon-box"><img src="googleIcon.svg" alt="Google logo" class="google-logo"></a>
+                        <a href="#" class="facebook icon-box"><i class="login-icon fab fa-facebook-f"></i></a>
+                        <a href="#" class="twitter icon-box"><i class="login-icon fab fa-twitter"></i></a>
+                    </div>  
+
+                    <button id="login-btn"><img src="chevronRightArrow.svg" alt="right arrow" width="42" height="42"></button>
+                    <a href="#">having trouble logging in?</a>
+                    <a href="signup.html">Create an account</a>
+                </div>
+            </div>            
+        </main>
+        <footer>Gale 2004-2025</footer>
+    </body>
+</html>
+
+<script>
+    document.getElementById("login-btn").addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const inputEmail = document.getElementById("login-email").value;
+        const inputPassword = document.getElementById("login-password").value;
+
+        // Retrieve the saved email and password from localStorage
+        const savedEmail = localStorage.getItem("userEmail");
+        const savedPassword = localStorage.getItem("userPassword");
+
+        // Debugging logs to check the values retrieved from localStorage
+        console.log("Input Email:", inputEmail);  // Log the entered email
+        console.log("Input Password:", inputPassword);  // Log the entered password
+        console.log("Saved Email:", savedEmail);  // Log the saved email from localStorage
+        console.log("Saved Password:", savedPassword);  // Log the saved password from localStorage
+
+        // Check if the entered email and password match the saved values
+        if (inputEmail === savedEmail && inputPassword === savedPassword) {
+            alert("Login successful!");
+            window.location.href = "index.html"; // <-- Redirects to landing page
+        } else {
+            alert("Invalid login credentials.");
+        }
+    });
+</script>

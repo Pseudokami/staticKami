@@ -1,0 +1,364 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 60px;
+    background-color: #000;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8
+}
+
+footer {
+    background-color: #272823;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+
+/*stuff inside the page*/
+.signature {
+    text-decoration: none;
+    color: white;
+    position: absolute; /* Keeps it inside the navbar */
+    top: 50%;
+    left: 16px;
+    font-size: 1.32rem;
+    font-weight: 900;
+    writing-mode: vertical-rl; /* Makes text vertical */
+    text-orientation: upright; /* Ensures characters stay upright */
+    transform: translateY(-50%); /* Centers it vertically */
+    white-space: nowrap; /* Prevents unwanted line breaks */
+}
+
+.options {
+    display: flex;
+    list-style: none;
+}
+
+.options li {
+    margin-left: 20px;
+}
+
+.options li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.social-icon {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.15rem;
+}
+
+.icon-separator {
+    width: 2px;
+    height: 20px;
+    background-color: #aaa;
+    margin: 0 14px;
+}
+
+.profile-icon {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+/*banner*/
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-size: x-large;
+}
+
+.banner {
+    width: 100%; 
+    height: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* BestSellers*/
+.flex-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 52px;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bestSeller img {
+    width: 100%;
+    height: auto;
+}
+
+.bestSeller-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-separator {
+    border-top: 1px solid #272823;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#misc-product-desc, #misc-product-descul li {
+    color: #351f17cb;
+    margin-left: 20px;
+}
+
+.moreStuff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rnbBar img {
+    display: block;
+    width: 100%;
+}
+
+/* Drag drop area part */
+.page-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+#content {
+    flex: 1;
+    background-color: #faf9f2;
+    padding: 15px;
+    overflow-y: auto; /* Ensures that #content scrolls vertically */
+    max-height: 100%; /* Limit content height to parent */
+}
+
+#drop-area {
+    width: 23.5%;
+    background-color: #ECE9DC;
+    padding: 20px;
+    min-height: 1400px;
+    max-height: 1400px;
+    border-left: 1px solid #ccc;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    cursor: grab;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-selector button {
+    width: 20px;
+    height: 20px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #272823;
+    border: 2px solid #272823;
+    border-radius: 50%; /* IT MAKES THE BUTTON ROUND WTF */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.quantity-selector span {
+    font-size: 1rem;
+    font-weight: bold;
+    height: 36px;
+    line-height: 32px;
+    width: 36px;
+    text-align: center;
+    border-radius: 0;
+    display: inline-block;
+    border: 2px solid #351f17;
+}
+
+.quantity-text {
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.quantity-selector button:hover {
+    background-color: #F46E35; /* Add a background color when hovered */
+    color: white; /* Change text color to white when hovered */
+}
+
+.addToCart {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 7px 24px;
+    background-color: #F46E35;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.addToCart:hover {
+    background-color: #351f17;
+}
+
+.removeFromCart {
+    background-color: #49353344;
+    color: white;
+}
+
+.removeFromCart:hover {
+    background-color: #272823; 
+}
+
+/* Add to Cart Section with Masonry Layout (New part) */
+.add-to-cart-section {
+    display: grid;                              /* GRIDS AND SHIT */
+    grid-template-columns: repeat(auto-fill, minmax(282px, 1fr)); /* Masonry-like grid */
+    grid-gap: 20px;                             /* Adds spacing between items */
+    padding: 20px;                              /* Padding inside the container */
+    justify-items: center;                      /* Centers items horizontally */
+    row-gap: 11px;                              /* Adds more gap between rows */
+}
+
+/* Product Card (Individual item within Add to Cart Section) */
+.product-card {
+    display: flex;
+    flex-direction: column;                         /* Stack image and details vertically */
+    background-color: #F8F8F8;
+    border: 1px solid #e4e1e1;                       /* Border around product */
+    border-radius: 8px;                             /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);     /* Light shadow effect */
+    overflow: hidden;                               /* Ensures no overflow */
+    width: 100%;
+    max-width: 324px; /* Set max-width to limit size */
+    transition: transform 0.3s ease;            /* Smooth hover effect */
+    justify-content: space-around;              /* Distribute space between content (image, details, button) */
+    align-items: center;                        /* Center the content horizontally */
+    margin: 13px;                               /* Adds some space between cards */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* IT GIVES YOU A HOVER EFFECT WTF */
+}
+
+/* Product image styling */
+.product-image {
+    width: 100%;
+    height: 200px; /* Consistent size fot the images */
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 216px;
+    object-fit: cover;
+}
+
+/* Product details */
+.product-details {
+    padding: 15px;
+    width:55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+/* Product name and description */
+.product-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Product price styling */
+.product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f46e35;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #f46e35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    background-color: #351f17;
+}
